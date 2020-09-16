@@ -26,12 +26,16 @@ int _strcmp(char *s1, char *s2)
  * Description: Determine if is it a number between 0 and 9
  * Return: 0 Value if it works
  */
-int _isdigit(int c)
+int _isdigit(char *c)
 {
-	if (c >= 48 && c <= 57)
+	int x = 0;
+
+	for (; c[x]; x++)
+	{
+		if (c[x] < 48 || c[x] > 57)
+			return (0);
+	}
 		return (1);
-	else
-		return (0);
 }
 
 /**
@@ -42,7 +46,7 @@ int _isdigit(int c)
  * linked dlistint_t list
  * Return: The number of nodes
  */
-size_t dlistint_len(const dlistint_t *h)
+size_t dlistint_len(const stack_t *h)
 {
 	size_t c = 0;
 
@@ -61,9 +65,9 @@ size_t dlistint_len(const dlistint_t *h)
  * Description: function that free a dlistint_t list.
  * Return: nothing
  */
-void free_dlistint(dlistint_t *head)
+void free_dlistint(stack_t *head)
 {
-	dlistint_t *last;
+	stack_t *last;
 
 	last = head;
 	while (head)

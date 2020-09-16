@@ -39,4 +39,17 @@ typedef struct instruction_s
 } instruction_t;
 
 
+int main(int argc, char **argv);
+void (*opcode_func(char *str))(stack_t **stack, unsigned int line_number);
+void read_file(FILE *fd, char *filename);
+
+int _strcmp(char *s1, char *s2);
+int _isdigit(char *c);
+size_t dlistint_len(const stack_t *h);
+void free_dlistint(stack_t *head);
+void delete_node(stack_t **head);
+
+void stack_push(stack_t **stack, unsigned int line_number);
+void stack_pall(stack_t **stack, unsigned int line_number);
+
 #endif
