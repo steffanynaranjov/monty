@@ -1,16 +1,12 @@
-<h1 class="gap"> C - Stacks, Queues - LIFO, FIFO</h1>
+<h1 class="gap">0x19. C - Stacks, Queues - LIFO, FIFO</h1>
+<p><img src="https://pbs.twimg.com/media/CFYYWy6UEAE9Ow-.png" /><br />
 
 <h2> Description </h2>
-<p> This project is made as a projevt for Holberton School. Steffany Naranjo Vargas. </p>
-
-<h2>Resources</h2>
+<p> This is a project for Holberton Schoo. Made by Steffany Naranjo Vargas </p>
 
 <p><strong>Read or watch</strong>:</p>
-
-<ul>
-<li><a href="https://www.google.com/webhp?q=stack%20and%20queue" title="Google" target="_blank">Google</a> </li>
-<li><a href="https://stackoverflow.com/questions/1433204/how-do-i-use-extern-to-share-variables-between-source-files" title="How do I use extern to share variables between source files in C?" target="_blank">How do I use extern to share variables between source files in C?</a> </li>
-</ul>
+<li><a href="https://www.sanfoundry.com/c-programming-examples-stacks/#:~:text=C%20Examples%20on%20Stack%20Implementation,was%20added%20into%20the%20stack.">Stack</a> </li>
+<li><a href="https://www.sanfoundry.com/c-program-queue-using-linked-list/">Queue</a> </li>
 
 <h2>Learning Objectives</h2>
 
@@ -71,14 +67,6 @@ typedef struct instruction_s
 
 <pre><code>$ gcc -Wall -Werror -Wextra -pedantic *.c -o monty
 </code></pre>
-
-<ul>
-<li>Any output must be printed on <code>stdout</code></li>
-<li>Any error message must be printed on <code>stderr</code>
-
-<h3>Tests</h3>
-
-<p>We strongly encourage you to work all together on a set of tests</p>
 
 <h3>The Monty language</h3>
 
