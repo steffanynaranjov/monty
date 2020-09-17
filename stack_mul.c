@@ -13,7 +13,7 @@ void stack_mul(stack_t **stack, unsigned int line_number)
 
 	if (dlistint_len(*stack) < 2)
 	{
-		fprintf(stderr, "L%i: can't div, stack too short\n", line_number);
+		fprintf(stderr, "L%i: can't mul, stack too short\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 	x += (*stack)->n;
