@@ -54,5 +54,6 @@ void stack_pall(stack_t **stack, unsigned int line_number);
 void stack_pint(stack_t **stack, unsigned int line_number);
 void stack_pop(stack_t **stack, unsigned int line_number);
 void stack_swap(stack_t **stack, unsigned int line_number);
+void stack_add(stack_t **stack, unsigned int line_number);
 
 #endif
