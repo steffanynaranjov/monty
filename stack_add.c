@@ -9,7 +9,7 @@
  */
 void stack_add(stack_t **stack, unsigned int line_number)
 {
-	int x;
+	int x = 0;
 
 	if (dlistint_len(*stack) < 2)
 	{
