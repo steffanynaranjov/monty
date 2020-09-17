@@ -22,5 +22,6 @@ void stack_pchar(stack_t **stack, unsigned int line_number)
 		fprintf(stderr, "L%i: can't pchar, value out of range", line_number);
 		exit(EXIT_FAILURE);
 	}
-	printf("%c\n", x);
+	putchar(x);
+	putchar('\n');
 }
