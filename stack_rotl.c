@@ -9,18 +9,18 @@
  */
 void stack_rotl(stack_t **stack, unsigned int line_number)
 {
-	stack_t *tmp = *stack, *top;
+	stack_t *tmp = *stack;
+	int top;
 	(void) line_number;
 
-	if (dlistint_len(*stack) < 2)
-		return;
-	top = (*stack)->next;
-	top->prev = NULL;
-
-	while (tmp->next != NULL)
-		tmp = tmp->next;
-	tmp->next = *stack;
-	(*stack)->next = NULL;
-	(*stack)->prev = tmp;
-	(*stack) = top;
+	if (*stack)
+	{
+		top = (*stack)->n;
+		while (tmp->next)
+		{
+			tmp->n = tmp->next->n;
+			tmp = tmp->next;
+		}
+		tmp->n = top;
+	}
 }
